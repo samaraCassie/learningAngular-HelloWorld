@@ -10,6 +10,7 @@ import { PagOrderComponent } from './pag-order/pag-order.component';
 import { CardComponent } from './card/card.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatButtonModule} from '@angular/material/button';
     PagProductComponent,
     PagHomeComponent,
     PagOrderComponent,
-    CardComponent
+    CardComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

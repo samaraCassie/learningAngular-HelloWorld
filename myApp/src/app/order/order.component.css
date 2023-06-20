@@ -1,0 +1,11 @@
+.example-card {
+  background: rgba(27, 27, 31, 0.8);
+  box-shadow: px 6px 15px rgba(54, 46, 42, 0.371);
+  border: .2px solid rgba(128, 128, 128, 0.479);
+  color: rgb(158, 160, 160);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
