@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,11 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 export class AppComponent {
   title = 'myApp';
 
-  constructor(private db: AngularFireDatabase) {}
+  constructor(private db: AngularFireDatabase, private router: Router) {}
+
+  goToListProduct() {
+    this.router.navigate(['/list-product']);
+  }
 
   ngOnInit() {
 

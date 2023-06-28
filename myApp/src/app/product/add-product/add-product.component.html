@@ -1,7 +1,7 @@
 <div class="pt-3 pb-2 mb-3 border-bottom">
   <h2 class="h2">Adicionar Contato</h2>
 </div>
-<form [formGroup]="contatoForm" (ngSubmit)="submitForm()" novalidate>
+<form [formGroup]="productForm" (ngSubmit)="submitForm()" novalidate>
   <div class="row">
     <div class="col-lg-6 col-md-8 col-sm-12">
       <div class="row">
@@ -80,7 +80,7 @@
       <div class="form-group text-end">
 
         <button type="button" class="btn btn-secondary mx-2" (click)="resetForm()">Limpar</button>
-        <button type="submit" class="btn btn-success mx-2" [disabled]="!contatoForm.valid">Adicionar Contato</button>
+        <button type="submit" class="btn btn-success mx-2" [disabled]="!productForm.valid">Adicionar Contato</button>
 
       </div>
     </div>

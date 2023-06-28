@@ -1,24 +1,36 @@
-<nav>
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: aliceblue; ">
-      <!--<img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">-->
-      MARCA
-    </a>
-  </div>
-  <div class="navmenu">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/pag-home" routerLinkActive="active">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/pag-product" routerLinkActive="active">Produtos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/pag-order" routerLinkActive="active">Pedidos</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<main>
-  <app-pag-order></app-pag-order>
-</main>
+<body class="body-content">
+  <nav>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: aliceblue; ">
+        <!--<img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">-->
+        MARCA
+      </a>
+    </div>
+    <div class="navmenu">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pag-home" routerLinkActive="active">Home</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/pag-product">Produtos</a>
+          </li><!--
+          <li>
+            <a class="nav-link" routerLink="/add-product">Adicionar Produtos</a>
+          </li>
+          <li>
+            <a class="nav-link" routerLink="/edit-product">Editar Produtos</a>
+          </li> -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pag-order">Pedidos</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <!--<footer class="footer navbar-fixed-bottom">
+    <span>Desenvolvido por Samara Cassie dos Santos - 2023</span>
+  </footer>-->
+</body>
